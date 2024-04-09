@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">loginSystem</string>
+    <string name="pets_strays_watch"><![CDATA[Pets & Strays Watch]]></string>
+    <string name="StringEmail">Email</string>
+    <string name="StringPassword">Password</string>
+    <string name="button">Button</string>
+    <string name="google">Google</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="title_activity_signup">signup</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="or_continue_with">or continue with</string>
+    <string name="todo">TODO</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="login">Login</string>
+    <string name="already_have_an_account_sign_in">Already Have An Account? Sign in</string>
+    <string name="register">Register</string>
+</resources>

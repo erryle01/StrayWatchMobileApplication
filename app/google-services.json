@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "445350978886",
+    "firebase_url": "https://messenger-a7cb0-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "messenger-a7cb0",
+    "storage_bucket": "messenger-a7cb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445350978886:android:55561ef3ee5f16a2c17147",
+        "android_client_info": {
+          "package_name": "com.example.loginsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpXPH1kUeUra3UnPhJqlUaNKMJk3Eb8Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445350978886:android:512921807997ee3fc17147",
+        "android_client_info": {
+          "package_name": "com.example.messenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpXPH1kUeUra3UnPhJqlUaNKMJk3Eb8Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
