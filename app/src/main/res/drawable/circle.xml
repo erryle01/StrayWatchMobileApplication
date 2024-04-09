@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <inset android:insetTop="-850dp">
+            <shape android:shape="ring"
+                android:thickness="380dp"
+                android:innerRadius="0dp"
+                android:useLevel="false">
+                <stroke android:width="5dp"
+                    android:color="@color/white"/>
+                <solid android:color="@color/white"/>
+
+
+            </shape>
+
+        </inset>
+
+    </item>
+
+</selector>
