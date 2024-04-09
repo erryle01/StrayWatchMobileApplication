@@ -20,4 +20,12 @@
     <string name="login">Login</string>
     <string name="already_have_an_account_sign_in">Already Have An Account? Sign in</string>
     <string name="register">Register</string>
+    <string name="petcount">Pet Count: 3</string>
+    <string name="userName">King Of Hell</string>
+    <string name="pet_profiling">Pet Profiling</string>
+    <string name="vaccine">Vaccine Reservation</string>
+    <string name="sighting">Stray Sighting\nReport</string>
+    <string name="guidtip"><![CDATA[Guides & Tips]]></string>
+    <string name="news">News</string>
+    <string name="feedback">Feedback</string>
 </resources>
