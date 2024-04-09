@@ -1,48 +1,52 @@
 package com.example.loginsystem
 
 import android.os.Bundle
-
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomNavigationView: BottomNavigationView
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.hello)
 
-        // Initialize views
+        // Initialize bottom navigation view
         bottomNavigationView = findViewById(R.id.bottom_navigation)
 
+        // Set default fragment
+        replaceFragment(HomeFragment())
 
-        // Set up bottom navigation view
-        bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
-            // Handle bottom navigation item selection
+        // Set navigation item click listener
+        bottomNavigationView.setOnItemSelectedListener  { menuItem ->
             when (menuItem.itemId) {
-                // Handle each menu item click
                 R.id.navigation_item1 -> {
-                    // Handle item 1 click
+                    replaceFragment(HomeFragment())
                     true
                 }
                 R.id.navigation_item2 -> {
-                    // Handle item 2 click
+                    replaceFragment(SearchFragment())
                     true
                 }
                 R.id.navigation_item3 -> {
-                    // Handle item 3 click
+                    replaceFragment(MessageFragment())
                     true
                 }
                 R.id.navigation_item4 -> {
-                    // Handle item 4 click
+                    replaceFragment(ProfileFragment())
                     true
                 }
                 else -> false
             }
         }
+    }
 
-
+    private fun replaceFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack(null)
+            .commit()
     }
 }
