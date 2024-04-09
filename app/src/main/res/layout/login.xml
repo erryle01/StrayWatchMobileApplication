@@ -39,7 +39,7 @@
     <EditText
         android:id="@+id/loginEmail"
         android:layout_width="295dp"
-        android:layout_height="48dp"
+        android:layout_height="50dp"
         android:layout_marginTop="24dp"
         android:height="60dp"
         android:autofillHints=""
@@ -59,7 +59,7 @@
     <EditText
         android:id="@+id/loginPassword"
         android:layout_width="295dp"
-        android:layout_height="48dp"
+        android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:height="60dp"
         android:autofillHints=""
@@ -82,8 +82,8 @@
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="297dp"
-        android:layout_height="48dp"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/button1"
         android:text="@string/login"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="12dp"
-        android:text="Dont Have an Account? Sign up"
+        android:text="@string/dont_have_an_account_sign_up"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
@@ -142,8 +142,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
-        android:layout_width="291dp"
-        android:layout_height="48dp"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/google_btn"
         android:drawableLeft="@drawable/google_icon"
