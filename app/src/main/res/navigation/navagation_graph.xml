@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navagation_graph"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.loginsystem.HomeFragment"
+        android:label="HomeFragment" >
+
+        <!-- Define the action from HomeFragment to PetProfilingFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_petProfilingFragment"
+            app:destination="@id/petProfilingFragment" />
+    </fragment>
+
+    <!-- Define PetProfilingFragment -->
+    <fragment
+        android:id="@+id/petProfilingFragment"
+        android:name="com.example.loginsystem.PetProfilingFragment"
+        android:label="PetProfilingFragment" >
+        <!-- Add any additional configurations for PetProfilingFragment here -->
+    </fragment>
+</navigation>
