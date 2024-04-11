@@ -11,27 +11,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginSystem"
         tools:targetApi="31">
-
-        <!-- Activities -->
-
-        <activity android:name=".TestIntent"/>
+        <activity
+            android:name=".News"
+            android:exported="false" />
+        <activity
+            android:name=".GuidesAndTips"
+            android:exported="false" />
+        <activity
+            android:name=".ReportCam"
+            android:exported="false" />
+        <activity
+            android:name=".VaccineSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".PetProfilingForm"
+            android:exported="false" /> <!-- Activities -->
+        <activity android:name=".TestIntent" />
         <activity
             android:name=".LoginActivity"
+            android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MyApp"
-            android:exported="true">
+            android:theme="@style/Theme.MyApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            />
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.mysports.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/pic_paths" />
+        </provider>
     </application>
 
 </manifest>
