@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetProfilingForm">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="16dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/back_btn"
+                android:text="@string/back_btn"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="4dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pet_profile_form"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="412dp"
+    android:layout_height="683dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+    app:layout_constraintVertical_bias="0.0">
+
+        <ScrollView
+            android:id="@+id/ScrollViewForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/addBtnBgCon"
+                    android:name="com.example.loginsystem.PetProfilingFragment"
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/add_btn_bg_con" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/addBtnBg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-180dp"
+                    android:text="@string/btnIcon"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/petnameformTview"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pet_name"
+                        android:layout_marginTop="30dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="60dp"/>
+
+                    <EditText
+                        android:id="@+id/petNameFormInput"
+                        android:layout_width="295dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:height="60dp"
+                        android:layout_gravity="center"
+                        android:autofillHints=""
+                        android:background="@drawable/input_text"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="@string/pet_name"
+                        android:padding="12dp"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/PetNameFormView2"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pet_color"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="60dp"/>
+
+                    <EditText
+                        android:id="@+id/petNameFormInput2"
+                        android:layout_width="295dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:height="60dp"
+                        android:layout_gravity="center"
+                        android:autofillHints=""
+                        android:background="@drawable/input_text"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="@string/pet_color"
+                        android:padding="12dp"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/PetNameFormView3"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pet_gender"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="60dp"/>
+
+                    <Spinner
+                        android:id="@+id/petNameFormInput3"
+                        android:layout_width="295dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/input_text"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:padding="12dp"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/PetNameFormView4"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pet_age"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="60dp"/>
+
+                    <EditText
+                        android:id="@+id/petNameFormInput4"
+                        android:layout_width="295dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:height="60dp"
+                        android:layout_gravity="center"
+                        android:autofillHints=""
+                        android:background="@drawable/input_text"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="@string/pet_age"
+                        android:padding="12dp"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/PetNameFormView5"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pet_color"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="60dp"/>
+
+                    <EditText
+                        android:id="@+id/petNameFormInput5"
+                        android:layout_width="295dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:height="60dp"
+                        android:layout_gravity="center"
+                        android:autofillHints=""
+                        android:background="@drawable/input_text"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:hint="@string/pet_color"
+                        android:padding="12dp"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+                        tools:ignore="TextSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/PetNameFormView6"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pet_type"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="60dp"/>
+
+                    <Spinner
+                        android:id="@+id/petNameFormInput6"
+                        android:layout_width="295dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/input_text"
+                        android:drawablePadding="12dp"
+                        android:ems="10"
+                        android:padding="12dp"
+                        android:textSize="13sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+                        tools:ignore="TextSizeCheck" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
