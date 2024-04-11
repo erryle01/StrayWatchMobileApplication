@@ -18,16 +18,4 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        // Find the button view by its ID
-        val buttonGoToPetProfiling: Button = view.findViewById(R.id.buttonProfiling)
-
-        // Set OnClickListener to the button
-        buttonGoToPetProfiling.setOnClickListener {
-            // Navigate to fragment_pet_profiling
-            findNavController().navigate(R.id.PetProfilingFragment)
-        }
-    }
 }
