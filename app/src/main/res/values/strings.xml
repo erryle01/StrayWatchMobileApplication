@@ -36,4 +36,7 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="test">test</string>
+    <string name="addPetPro">Add Pets Profiile</string>
+    <string name="btnIcon"><![CDATA[+]]></string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

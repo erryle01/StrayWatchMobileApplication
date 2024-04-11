@@ -5,12 +5,14 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.example.loginsystem.databinding.LoginBinding
+
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : ComponentActivity() {
 
     private lateinit var binding: LoginBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

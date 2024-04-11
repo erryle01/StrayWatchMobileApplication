@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:layout_editor_absoluteX="4dp"
-    tools:layout_editor_absoluteY="-1dp">
+    tools:layout_editor_absoluteY="-1dp"
+    android:background="@drawable/linear_background_color">
 
 
     <TextView
@@ -162,12 +163,13 @@
         android:layout_height="140dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/todo"
-        android:src="@drawable/pet"
+        android:src="@drawable/pet1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.012" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
