@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
     <!-- Main content area -->
     <!-- Add your main content here -->
 
@@ -102,7 +102,7 @@
                 android:layout_marginTop="00dp"
                 android:background="@drawable/pow_background">
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/buttonProfiling"
                     android:layout_width="152dp"
                     android:layout_height="146dp"
@@ -135,54 +135,63 @@
                     android:background="@drawable/button_profiling"
                     android:drawableTop="@drawable/camera"
                     android:text="@string/sighting"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.162"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonNews"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonGT"
+                    app:layout_constraintHorizontal_bias="0.508"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonGT"
                     android:layout_width="152dp"
                     android:layout_height="146dp"
-                    android:layout_marginTop="228dp"
+                    android:layout_marginTop="36dp"
                     android:background="@drawable/button_profiling"
                     android:drawableTop="@drawable/gt"
                     android:text="@string/guidtip"
+                    app:layout_constraintBottom_toTopOf="@+id/buttonFeedback"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.857"
+                    app:layout_constraintHorizontal_bias="0.822"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@+id/buttonVaccine"
+                    app:layout_constraintVertical_bias="0.041" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonNews"
                     android:layout_width="152dp"
                     android:layout_height="146dp"
-                    android:layout_marginTop="420dp"
                     android:background="@drawable/button_profiling"
                     android:drawableTop="@drawable/news"
                     android:text="@string/news"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.162"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonFeedback"
+                    app:layout_constraintHorizontal_bias="0.508"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.772" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/buttonFeedback"
                     android:layout_width="152dp"
                     android:layout_height="146dp"
-                    android:layout_marginTop="420dp"
                     android:background="@drawable/button_profiling"
                     android:drawableTop="@drawable/feedback"
                     android:text="@string/feedback"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.857"
+                    app:layout_constraintHorizontal_bias="0.822"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.77" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         </LinearLayout>
 
     </ScrollView>
-
+    <FrameLayout
+        android:id="@+id/fragment_container_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>
