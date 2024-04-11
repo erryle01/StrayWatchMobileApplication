@@ -3,9 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <!-- Main content area -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation" />
+    <!-- Add your main content here -->
 
 
     <!-- Bottom Navigation View -->
@@ -16,20 +23,5 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation"
         tools:ignore="VisualLintBottomNav" />
-
-    <!-- Navigation View for user's name -->
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="start">
-
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <!-- Add your main content here -->
-    </com.google.android.material.navigation.NavigationView>
 
 </RelativeLayout>

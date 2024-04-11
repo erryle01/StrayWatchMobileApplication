@@ -36,7 +36,8 @@ class LoginActivity : ComponentActivity() {
                             val intent = Intent(this, MainActivity::class.java)
                             // Pass any data if needed
                             startActivity(intent)
-
+                            // Finish the current activity to prevent going back to LoginActivity
+                            finish()
                         } else {
                             // Show the error message
                             Toast.makeText(this, task.exception?.message, Toast.LENGTH_SHORT).show()
@@ -44,10 +45,17 @@ class LoginActivity : ComponentActivity() {
                     }
             } else {
                 Toast.makeText(this, "Empty fields are not allowed", Toast.LENGTH_SHORT).show()
-                    }
-                }
             }
+        }
 
+        // Check if the user is already logged in
+        val currentUser = firebaseAuth.currentUser
+        if (currentUser != null) {
+            // User is already logged in, navigate to MainActivity
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            // Finish the current activity to prevent going back to LoginActivity
+            finish()
+        }
     }
-
-
+}
