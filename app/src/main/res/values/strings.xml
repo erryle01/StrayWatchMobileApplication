@@ -36,7 +36,25 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="test">test</string>
-    <string name="addPetPro">Add Pets Profiile</string>
+    <string name="addPetPro">Add Pet Profile</string>
     <string name="btnIcon"><![CDATA[+]]></string>
-    <string name="title_activity_maps">MapsActivity</string>
+    <string name="pet_profile_form">Pet Profile Form</string>
+    <string name="back_btn">Back</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="pet_color">Pet Color</string>
+    <string name="pet_gender">Pet Gender</string>
+    <string name="pet_age">Pet Age</string>
+    <string name="pet_type">Pet Type</string>
+    <string name="vaccine_schedule">Vaccination Schedule</string>
+    <string name="save_sched">Save Schedule</string>
+    <string name="capture">Capture</string>
+
+    <string-array name="petgender">
+        <item>Male</item>
+        <item>Male</item>
+    </string-array>
+    <string-array name="pettype">
+        <item>Dog</item>
+        <item>Cat</item>
+    </string-array>
 </resources>
