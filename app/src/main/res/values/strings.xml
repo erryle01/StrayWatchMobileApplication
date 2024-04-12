@@ -48,6 +48,17 @@
     <string name="vaccine_schedule">Vaccination Schedule</string>
     <string name="save_sched">Save Schedule</string>
     <string name="capture">Capture</string>
+    <string name="guidesandtips">Guides And Tips</string>
+    <string name="report">Stray Sighting Report</string>
+    <string name="feedText">Feedback</string>
+    <string name="petandstray">Pets And Stray Watch</string>
+    <string name="email">Email</string>
+    <string name="username">Test01</string>
+    <string name="useremail">test01@gmail.com</string>
+    <string name="userpass">Password</string>
+    <string name="passasteris">***********</string>
+    <string name="write_something_here">Write Something Here...</string>
+    <string name="submit">Submit</string>
 
     <string-array name="petgender">
         <item>Male</item>
