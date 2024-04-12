@@ -18,6 +18,10 @@
 
         <!-- Activities -->
         <activity android:name=".TestIntent" />
+        <activity android:name="AddPetProfile" />
+        <activity android:name=".VaccineSchedule"/>
+        <activity android:name=".News"/>
+        <activity android:name=".Test01"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -32,9 +36,7 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-        <activity
-            android:name=".AddPetProfile"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
