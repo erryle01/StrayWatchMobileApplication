@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation">
+
+
+    <activity
+        android:id="@+id/adminDashboard"
+        android:name="com.example.loginsystem.admin.AdminDashboard"
+        android:label="activity_admin_dashboard"
+        tools:layout="@layout/activity_admin_dashboard" />
+    <fragment
+        android:id="@+id/nav_Admin_Feedback"
+        android:name="com.example.loginsystem.admin.AdminFeedback"
+
+        tools:layout="@layout/fragment_admin_feedback" >
+        <action
+            android:id="@+id/action_nav_Admin_Feedback_to_nav_Admin_Signout"
+            app:destination="@id/nav_Admin_Signout" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Admin_Message"
+        android:name="com.example.loginsystem.admin.AdminMessage"
+
+        tools:layout="@layout/fragment_admin_message" >
+        <action
+            android:id="@+id/action_nav_Admin_Message_to_nav_Admin_Sighting_Reports"
+            app:destination="@id/nav_Admin_Sighting_Reports" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Admin_News"
+        android:name="com.example.loginsystem.admin.AdminNews"
+
+        tools:layout="@layout/fragment_admin_news" >
+        <action
+            android:id="@+id/action_nav_Admin_News_to_nav_Admin_Vaccine_Sched"
+            app:destination="@id/nav_Admin_Vaccine_Sched" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Admin_Pet_Profiling"
+        android:name="com.example.loginsystem.admin.AdminPetProfiling"
+
+        tools:layout="@layout/fragment_admin_pet_profiling" >
+        <action
+            android:id="@+id/action_nav_Admin_Pet_Profiling_to_nav_Admin_News"
+            app:destination="@id/nav_Admin_News" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Admin_Sighting_Reports"
+        android:name="com.example.loginsystem.admin.AdminSightingReports"
+
+        tools:layout="@layout/fragment_admin_sighting_reports" >
+        <action
+            android:id="@+id/action_nav_Admin_Sighting_Reports_to_nav_Admin_Pet_Profiling"
+            app:destination="@id/nav_Admin_Pet_Profiling" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_Admin_Signout"
+        android:name="com.example.loginsystem.admin.AdminSignnout"
+
+        tools:layout="@layout/fragment_admin_signnout" />
+
+    <fragment
+        android:id="@+id/nav_Admin_Vaccine_Sched"
+        android:name="com.example.loginsystem.admin.AdminVaccineReservation"
+
+        tools:layout="@layout/fragment_admin_vaccine_reservation" >
+        <action
+            android:id="@+id/action_nav_Admin_Vaccine_Sched_to_nav_Admin_Feedback"
+            app:destination="@id/nav_Admin_Feedback" />
+    </fragment>
+
+
+</navigation>

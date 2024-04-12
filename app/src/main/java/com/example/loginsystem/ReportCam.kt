@@ -20,7 +20,13 @@ class ReportCam : AppCompatActivity() {
         if (isSuccess) {
             captureIV.setImageURI(Uri.fromFile(File(currentPhotoPath)))
         }
+        val Buttonback: Button = findViewById(R.id.buttonBack)
+        // Handle back button click event
+        Buttonback.setOnClickListener {
+            onBackPressed() // Go back to the previous activity
+        }
     }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android=
+    "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_adminDashboard"
+            android:icon="@drawable/admidashboardicon"
+            android:title="@string/adminDashboard" />
+        <item
+            android:id="@+id/nav_AdminMessage"
+            android:icon="@drawable/baseline_email_24"
+            android:title="@string/adminmessages" />
+        <item
+            android:id="@+id/nav_ADminReports"
+            android:icon="@drawable/admin_report"
+            android:title="TODO" />
+        <item
+            android:id="@+id/nav_AdminPetProfilingEdit"
+            android:icon="@drawable/paw"
+            android:title="TODO" />
+        <item
+            android:id="@+id/nav_News"
+            android:icon="@drawable/news"
+            android:title="@string/news" />
+        <item
+            android:id="@+id/nav_AdminVacineReservation"
+            android:icon="@drawable/schedule"
+            android:title="@string/vaccine" />
+        <item
+            android:id="@+id/nav_AdminFeedback"
+            android:icon="@drawable/feedback"
+            android:title="@string/feedback" />
+
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_archive"
+            android:icon="@drawable/sign_out"
+            android:title="@string/sign_out" />
+
+    </group>
+</menu>

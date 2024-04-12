@@ -1,6 +1,7 @@
 package com.example.loginsystem
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +16,11 @@ class GuidesAndTips : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        val Buttonback: Button = findViewById(R.id.buttonBack)
+        // Handle back button click event
+        Buttonback.setOnClickListener {
+            onBackPressed() // Go back to the previous activity
         }
     }
 }

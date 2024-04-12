@@ -10,17 +10,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginSystem"
-        tools:targetApi="31"
-        tools:ignore="ExtraText">
-
-
-
-
-        <!-- Activities -->
+        tools:targetApi="31">
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".News"
+            android:exported="false" />
+        <activity
+            android:name=".GuidesAndTips"
+            android:exported="false" />
+        <activity
+            android:name=".ReportCam"
+            android:exported="false" />
+        <activity
+            android:name=".VaccineSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".PetProfilingForm"
+            android:exported="false" /> <!-- Activities -->
         <activity android:name=".TestIntent" />
         <activity android:name="AddPetProfile" />
-        <activity android:name=".VaccineSchedule"/>
-        <activity android:name=".News"/>
+
         <activity android:name=".Test01"/>
         <activity
             android:name=".LoginActivity"

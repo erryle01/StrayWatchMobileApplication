@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
             startActivity(intent)
 
             // Finish the current activity to prevent going back to ProfileFragment
-            activity?.finish()
+
         }
 
         // Vaccine button listener

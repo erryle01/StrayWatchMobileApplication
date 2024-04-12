@@ -31,7 +31,7 @@
     <string name="feedback">Feedback</string>
     <string name="dont_have_an_account_sign_up">Dont Have an Account? Sign up</string>
     <string name="user_name">User Name</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
@@ -59,10 +59,23 @@
     <string name="passasteris">***********</string>
     <string name="write_something_here">Write Something Here...</string>
     <string name="submit">Submit</string>
+    <string name="adminDashboard">Dashboard</string>
+    <string name="adminmessages">Messages</string>
+    <string name="adminSightingReports">Sighting Reports</string>
+    <string name="adminPetProfilingEdit">Pet Profiling</string>
+    <string name="adminDash">Admin Dashboard</string>
+    <string name="adminFeedback">Admin Feedback</string>
+    <string name="adminPet_Profiling">Admin Pet Profiling</string>
+    <string name="adminSighting_Reports">Admin Sighting Reports</string>
+    <string name="adminSignout">Admin Signout</string>
+    <string name="adminVaccine_Schedule">Admin Vaccine Schedule</string>
+    <string name="adminMessage">Admin Message</string>
+    <string name="adminNews">Admin News</string>
+    <string name="adminPetProfiling">Admin Pet Profiling</string>
 
     <string-array name="petgender">
         <item>Male</item>
-        <item>Male</item>
+        <item>Female</item>
     </string-array>
     <string-array name="pettype">
         <item>Dog</item>
