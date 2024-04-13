@@ -81,4 +81,7 @@
         <item>Dog</item>
         <item>Cat</item>
     </string-array>
+
+    <string name="google_map_api">AIzaSyBk86ryWOA92t81EAujvyau4dIWyNCbfc0</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

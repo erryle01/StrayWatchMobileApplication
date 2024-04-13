@@ -55,7 +55,7 @@ class HomeFragment : Fragment() {
             // Call signOut method to log out the user
 
             // After signing out, navigate back to LoginActivity
-            val intent = Intent(activity, AddPetProfile::class.java)
+            val intent = Intent(activity,  testGraph::class.java)
             startActivity(intent)
 
             // Finish the current activity to prevent going back to ProfileFragment
