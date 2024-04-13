@@ -3,18 +3,67 @@
     xmlns:android=
         "http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-
-        android:textAlignment="center"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_marginTop="4dp"
+        android:text="App Title"
+        android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="150px"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton4"
+        android:layout_width="150px"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="button"
+        app:layout_constraintStart_toEndOf="@+id/materialButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton5"
+        android:layout_width="150px"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:text="button"
+        app:layout_constraintStart_toEndOf="@+id/materialButton4"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150px"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        app:icon="@drawable/nav_baseline_search_24"
+        app:iconTint="@color/black"
+        app:backgroundTint="@color/transparent"
+        app:iconSize="30dp"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toEndOf="@+id/materialButton5"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

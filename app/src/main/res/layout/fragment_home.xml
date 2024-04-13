@@ -12,33 +12,34 @@
 
     <!-- Bottom Navigation View -->
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:ignore="UselessParent"
-        >
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        tools:ignore="UselessParent">
 
         <LinearLayout
-
+            android:backgroundTint="@color/transparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:gravity="center"
-           >
+            android:orientation="vertical">
 
             <LinearLayout
 
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-              >
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
                     <com.google.android.material.imageview.ShapeableImageView
                         android:id="@+id/propcimg"
                         android:layout_width="100dp"
@@ -61,20 +62,18 @@
                         android:textSize="20sp" />
 
 
-
-
                     <TextView
                         android:id="@+id/petcount"
                         android:layout_width="150dp"
                         android:layout_height="39dp"
                         android:layout_gravity="center"
                         android:background="@drawable/petcount"
+                        android:backgroundTint="@color/teal_200"
                         android:fontFamily="sans-serif-black"
                         android:gravity="center"
                         android:text="@string/petcount"
                         android:textAlignment="center"
                         android:textColor="#040404"
-                        android:backgroundTint="@color/teal_200"
                         android:textSize="20sp" />
 
                 </LinearLayout>
@@ -89,47 +88,49 @@
                 android:orientation="vertical">
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="-220dp">
+                android:layout_marginTop="-220dp"
+                android:gravity="center">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="350dp"
                     android:layout_height="200dp"
                     android:layout_gravity="center"
 
-                    app:cardCornerRadius="50dp"
-                    >
+                    app:cardCornerRadius="50dp">
 
                     <ImageView
                         android:id="@+id/eventimg"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:contentDescription="TODO"
                         android:paddingLeft="0dp"
                         android:paddingRight="0dp"
                         android:paddingBottom="0dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/pic"
-                        android:contentDescription="TODO"
                         tools:ignore="ContentDescription,HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="00dp"
-                android:background="@drawable/pow_background">
+                android:background="@drawable/pow_background"
+                android:orientation="horizontal">
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="40dp">
+                    android:layout_marginEnd="40dp"
+                    android:orientation="vertical">
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/buttonProfiling"
@@ -172,10 +173,12 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/buttonProfiling" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/buttonGT"
                         android:layout_width="152dp"
@@ -212,6 +215,20 @@
                         android:background="@drawable/button_profiling"
                         android:drawableTop="@drawable/feedback"
                         android:text="@string/feedback"
+                        app:backgroundTint="@color/dark_green"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.822"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/buttonGT" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/map"
+                        android:layout_width="152dp"
+                        android:layout_height="146dp"
+                        android:layout_marginTop="44dp"
+                        android:background="@drawable/button_profiling"
+                        android:drawableTop="@drawable/feedback"
+                        android:text="@string/heatmap"
                         app:backgroundTint="@color/dark_green"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.822"

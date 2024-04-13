@@ -36,7 +36,7 @@
     <string name="edit_profile">Edit Profile</string>
     <string name="sign_out">Sign Out</string>
     <string name="test">test</string>
-    <string name="addPetPro">Add Pets Profiile</string>
+    <string name="addPetPro">Add Pets Profile</string>
     <string name="btnIcon"><![CDATA[+]]></string>
     <string name="pet_profile_form">Pet Profile Form</string>
     <string name="back_btn">Back</string>
@@ -84,4 +84,5 @@
 
     <string name="google_map_api">AIzaSyBk86ryWOA92t81EAujvyau4dIWyNCbfc0</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="heatmap">Temporary Name</string>
 </resources>

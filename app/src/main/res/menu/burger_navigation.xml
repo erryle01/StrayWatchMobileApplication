@@ -8,20 +8,20 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_adminDashboard"
-            android:icon="@drawable/admidashboardicon"
+            android:icon="@drawable/admindashboardicon"
             android:title="@string/adminDashboard" />
         <item
             android:id="@+id/nav_AdminMessage"
             android:icon="@drawable/baseline_email_24"
             android:title="@string/adminmessages" />
         <item
-            android:id="@+id/nav_ADminReports"
+            android:id="@+id/nav_AdminReports"
             android:icon="@drawable/admin_report"
-            android:title="TODO" />
+            android:title="@string/adminSightingReports" />
         <item
             android:id="@+id/nav_AdminPetProfilingEdit"
             android:icon="@drawable/paw"
-            android:title="TODO" />
+            android:title="@string/adminPetProfiling" />
         <item
             android:id="@+id/nav_News"
             android:icon="@drawable/news"
